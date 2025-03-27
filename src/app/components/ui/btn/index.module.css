@@ -1,0 +1,89 @@
+.quest, .achive {
+    all: unset ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    cursor:  pointer;
+    transition: all ease-in-out 0.2s;
+}
+.quest {
+    width: 140px;
+    padding: 10px;
+}
+.achive {
+    width: 200px;
+    background-color: #2C2A2A;
+    padding: 15px 20px;
+}
+
+.quest p, .achive p{
+    font-size: 36px;
+    margin: 0px;
+    transition: all ease-in-out 0.2s;
+}
+.quest p {
+    color: black;
+
+}
+
+.quest img, .achive img {
+    width: 50px;
+    height: 50px;
+}
+
+.questDoneBtn {
+    background-color: #23B028;
+    border-bottom: 3px solid white;
+}
+.questDoneBtn:hover {
+    background-color: #1c8120;
+    border-bottom: 10px solid white;
+}
+
+
+.questRefuseBtn {
+    background-color: #9D2D2D;
+    border-bottom: 3px solid black;
+}
+.questRefuseBtn:hover {
+    background-color: #691e1e;
+    border-bottom: 10px solid black;
+}
+
+.questEditBtn {
+    background-color: #CACACA;
+    border-bottom: 3px solid #5C03F4;
+}
+.questEditBtn:hover {
+    background-color: #858484;
+    border-bottom: 10px solid #5C03F4;
+}
+
+.questDoneBtn:hover > p, .questRefuseBtn:hover p, .questRefuseBtn:hover > p  {
+    color: white;
+}
+
+.achiveDoneBtn p {
+    color: #23B028;
+}
+.achiveRefuseBtn p {
+    color: #9D2D2D;
+}
+.achiveEditBtn p {
+    color: white;
+}
+
+.achiveDoneBtn:hover {
+    background-color: #23B028;
+}
+.achiveRefuseBtn:hover {
+    background-color: #9D2D2D;
+}
+.achiveEditBtn:hover {
+    background-color: white;
+}
+.achiveDoneBtn:hover > p,.achiveRefuseBtn:hover > p,.achiveEditBtn:hover > p   {
+    color: black;
+}
