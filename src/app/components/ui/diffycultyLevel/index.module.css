@@ -1,0 +1,42 @@
+.legendaryitem {
+    padding: 9px 14px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 592px;
+    font-size: 24px;
+}
+
+.dificultGroup {
+    background-color: #2C2A2A;
+    padding: 20px;
+}
+.dificultHeader {
+    display: inline-block;
+    position: relative;
+    font-family: inter;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.arrow {
+    content: "";
+   position: absolute;
+   width: 2px;
+   height: 26px;
+   background-color: red;
+}
+.arrow::after , .arrow::before {
+    position: absolute;
+    background-color: white;
+    height: inherit;
+    width: inherit;
+    top: 0;
+    right: 0;
+}
+
+.dificultLevel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
