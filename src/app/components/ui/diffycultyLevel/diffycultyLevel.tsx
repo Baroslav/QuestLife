@@ -1,6 +1,9 @@
-import React from "react"
+'use client'
+
+import React, { useState } from "react"
 import DifficultyItem from "./diffycultyItem"
 import styles from "./index.module.css"
+import clsx from "clsx"
 
 type Level = { dificult : string ; color : string}
 
@@ -13,18 +16,29 @@ const dificultLevel:Level[] = [
 ]
 
 const DifficultyLevel = () => {
+    const [open , setOpen] = useState<boolean>(false)
+
+    const openFilter = () => {
+        setOpen(!open)
+    }
 
     return (
         <div className={styles.dificultGroup}>
-            <span className={styles.dificultHeader}>
-                Achievemet dificult 
-                <span className={styles.arrow}></span>
-            </span>
-            <div className={styles.dificultLevel}>
+
+            <div className={styles.dificultHeaderGroup} onClick={openFilter}>
+                <span className={styles.dificultHeader}>
+                    Achievemet dificult 
+                </span>
+                
+                <span className={clsx(styles.opener , {[styles.rotate] : open})}></span>
+            </div>
+
+            <div className={clsx(styles.dificultLevels , {[styles.open] : open})}>
                 {dificultLevel.map((item)=> (
-                    <DifficultyItem text = {item.dificult} color={item.color}/>
+                    <DifficultyItem key={item.dificult} text = {item.dificult} color={item.color}/>
                 ))}
             </div>
+
         </div>
     )
 }

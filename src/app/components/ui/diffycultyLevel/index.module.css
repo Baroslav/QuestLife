@@ -2,41 +2,84 @@
     padding: 9px 14px;
     box-sizing: border-box;
     display: inline-block;
-    width: 592px;
     font-size: 24px;
+    transition: 0.2 ease-in-out all;
 }
 
 .dificultGroup {
     background-color: #2C2A2A;
     padding: 20px;
+    width: 592px;
 }
-.dificultHeader {
+.dificultHeaderGroup {
+    width: 100%;
     display: inline-block;
     position: relative;
+
+}
+.dificultHeader {
     font-family: inter;
     font-size: 24px;
+    margin-bottom: 0px;
     color: white;
-    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+.dificultHeader:hover {
+    color: rgb(128, 128, 128);
 }
 
-.arrow {
-    content: "";
-   position: absolute;
-   width: 2px;
-   height: 26px;
-   background-color: red;
-}
-.arrow::after , .arrow::before {
+.opener {
     position: absolute;
+    right: 0;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+.opener::after, 
+.opener::before {
+    content: "";
     background-color: white;
-    height: inherit;
-    width: inherit;
+    width: 2px;
+    height: 26px;
+    position: absolute;
     top: 0;
+    transition: all ease-in-out 0.1s;
+}  
+.opener:hover::after ,.opener:hover::before {
+    background-color:rgb(128, 128, 128) ;
+}
+
+.opener::after:hover , .opener::before:hover {
+    background-color: rgb(128, 128, 128);
+}
+.opener::after {
+    transform: rotate(45deg);
+    left: 0;
+}
+.opener::before {
+    transform: rotate(-45deg);
     right: 0;
 }
 
-.dificultLevel {
-    display: flex;
+.dificultLevels {
+    margin-top: 15px;
     flex-direction: column;
     gap: 10px;
+    display: none;
 }
+.open {
+    display: flex;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
+.legendaryitem:hover {
+   box-shadow:0px 0px 1px rgb(222, 222, 222);
+   font-size: 26px;
+   font-weight: 500;
+}
+
+
+
