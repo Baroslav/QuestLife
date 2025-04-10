@@ -1,3 +1,21 @@
 .acihvementFilter {
     background-color: black;
 }
+.filterItems {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.filterItem {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.filterItem img {
+  
+}
+

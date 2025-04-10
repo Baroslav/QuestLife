@@ -1,11 +1,14 @@
+import styles from "./style.module.css"
+
+type TypeOptions = "difficultLevel" | "complided" | "rejected"  | "acepded"
+
 type OptionsType = {
-    type : "difficultLevel" | "complided" | "rejected"  | "acepded", 
+    type : TypeOptions , 
     difficult : string, 
     color : string
 }
 
 const options:OptionsType[] = [
-    {type : "difficultLevel" , difficult : "Legendary" , color : "249, 228, 0"},
     {type : "difficultLevel" , difficult : "Legendary" , color : "249, 228, 0"},
     {type : "difficultLevel" ,difficult : "Mythical" , color : "92, 3, 224"},
     {type : "difficultLevel" , difficult : "Epic" , color : "157, 45, 45"},
@@ -17,11 +20,14 @@ const options:OptionsType[] = [
 ]
 
 const AchivemetDifficultItems = () => {
+    
     return (
-        <div>
+        <div className = {styles.filterItems}>
             {
-                options.map(({type , difficult, color}) => (
-                    <div>{type}</div>
+                options.map(({type , difficult , color}) => (
+                    <div className = {styles.filterItem} style = {{backgroundColor : `rgb(${color})`}}>
+                        <img src={`${type}.png`} alt="" />
+                    </div>
                 ))
             }
         </div>

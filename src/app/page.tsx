@@ -12,7 +12,7 @@ const marckSctipt = Marck_Script({subsets : ["latin"], weight : "400"})
 export default function Home() {
   return (
     <div className={marckSctipt.className}>
-      <DifficultyLevel/>
+      <AchivementFillter/>
     </div>
   );
 }
