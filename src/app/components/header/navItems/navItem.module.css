@@ -1,0 +1,33 @@
+.navItem {
+    width: 200px;
+    position: relative;
+    background-color: rgb(75, 73, 73);
+    padding: 0px 30px;
+}
+.navLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+
+.navLink img {
+    width: 45px;
+    height: 45px;
+}
+
+.navItem span{
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: all ease-in-out 0.2s;
+}
+.navItem:hover > span{
+    width: 100%;
+}

@@ -1,0 +1,37 @@
+.searchBar {
+    width: 900px;
+    height: 63px;
+    background-color: #333131;
+    font-size: 18px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    color: white;
+    border: 1px solid #2C2A2A;
+    cursor: pointer;
+}
+.searchGroup {
+    display: inline-block;
+    position: relative;
+}
+.telescope {
+    position: absolute;   
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(172, 170, 170);
+}
+
+.searchBar:hover {
+    border: 1px solid rgba(255, 255, 255, 0.096);
+}
+.searchBar:focus {
+    border: 1px solid rgba(255, 255, 255, 0.336);
+}
+.telescope:hover {
+    background-color: rgb(219, 216, 216);
+}
+
