@@ -1,7 +1,7 @@
 import styles from './index.module.css'
 
 type AddBtnProprs = {
-    icon :string ;
+    icon :string;
     buttonText : string;
 }
 
