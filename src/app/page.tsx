@@ -6,6 +6,7 @@ import AchivementFillter from "./components/ui/achivementFilter/achivementFilter
 import AchivementFilter from "./components/ui/achivementFilter/achivementFilter";
 import Search from "./components/ui/search/search";
 import NavBar from "./components/header/navBar/navBar";
+import HeaderGoroup from "./components/header/headerGoroup/headerGoroup";
 
 
 
@@ -14,7 +15,7 @@ const marckSctipt = Marck_Script({subsets : ["latin"], weight : "400"})
 export default function Home() {
   return (
     <div className={marckSctipt.className}>
-      <NavBar/>
+      <HeaderGoroup/>
     </div>
   );
 }

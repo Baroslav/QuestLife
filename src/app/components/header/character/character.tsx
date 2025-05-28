@@ -1,13 +1,17 @@
-
+import styles from './character.module.css'
 
 const Character = () => {
     return (
-        <div>
-            <div>
+        <div className={styles.loginPanel}>
+            <div className={styles.imgWrapper}>
                 <img src="./helmet.png" alt="" />
             </div>
-            <p>Login</p>
-            <p>Register</p>
+            <div className={styles.login}>
+                <p>Login</p>
+                <p>Register</p>
+            </div>
         </div>
     )
 }
+
+export default Character

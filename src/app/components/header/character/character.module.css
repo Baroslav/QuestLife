@@ -1,0 +1,32 @@
+.loginPanel {
+    display: flex;
+    gap: 30px;
+    border-left: 2px solid black;
+    padding: 10px 20px;
+    width: 10%;
+}
+
+.imgWrapper {
+ 
+}
+
+.imgWrapper img {
+    width: 80px;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: right;
+}
+
+.login p {
+    cursor: pointer;
+    margin: 0px;
+    font-size: 24px;
+    color: white;
+    transition: all ease-in-out 0.2s;
+}
+.login p:hover {
+    color: black;
+}

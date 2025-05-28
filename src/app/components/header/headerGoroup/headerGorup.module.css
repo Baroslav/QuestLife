@@ -1,0 +1,11 @@
+.header {
+    background-color: #474343;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+.header img:hover {
+    cursor: pointer;
+    transform: scale(1.02)
+}

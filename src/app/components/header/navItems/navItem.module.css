@@ -1,17 +1,19 @@
 .navItem {
-    width: 200px;
+    min-width: 200px;
     position: relative;
-    background-color: rgb(75, 73, 73);
-    padding: 0px 30px;
+    height: 51px;
 }
 .navLink {
+    height: 51px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 5px;
+    gap: 15px;
     font-size: 32px;
     text-decoration: none;
     color: white;
+    transition: all ease-in-out 0.3s;
 }
 
 .navLink img {
@@ -22,12 +24,16 @@
 .navItem span{
     position: absolute;
     width: 0%;
-    left: 0;
-    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15%;
     height: 3px;
     background-color: rgb(255, 255, 255);
     transition: all ease-in-out 0.2s;
 }
 .navItem:hover > span{
-    width: 100%;
+    width: 120%;
+}
+.navItem:hover > a{
+   color: black;
 }
