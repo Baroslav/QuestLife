@@ -1,0 +1,74 @@
+.auth {
+    position: relative;
+    margin: 80px auto;
+    background-color: #474343;
+    color: white;
+    width: 1000px;
+    box-sizing: border-box;
+    padding: 120px 130px 20px 130px;  
+    border-radius: 25px;
+    font-family: inter;
+}
+.authHeader h2 {
+    width: 762px;
+    font-size: 26px;
+    padding-top: 5px;
+    margin: 0px;
+     font-weight: 300;
+}
+.authHeader h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 300;
+}
+
+.authInputs {
+    padding: 30px 20px;
+}
+
+.pass {
+ padding-top: 35px;
+}
+
+.authInputs button{
+    font-family: inter;
+    padding: 39px 52px;
+    background-color: #2C2A2A;
+    color: #D0D0D0;
+    border: none;
+    font-size: 24px;
+}
+
+.skeletons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+}
+
+.swords img {
+    position: absolute;
+    width: 150px;
+    z-index: -1;
+}
+.leftTopSword {
+    left: -7%;
+    top: -5%;
+}
+.rightTopSword{
+    right: -7%;
+    top: -5%;
+    transform: rotate(90deg);
+}
+.leftBot {
+    left: -7%;
+    bottom: -5%;
+    transform: rotate(-90deg);
+}
+.rightBot {
+    right: -7%;
+    bottom: -5%;
+    transform: rotate(180deg);
+}

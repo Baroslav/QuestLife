@@ -4,17 +4,25 @@ type InputProps = {
     type : "password" | "email" | "text",
     paleceHolderText : string,
     icon?: string,
+    labelText? : string
 }
 
-const QuestInput:React.FC<InputProps>  = ({type , paleceHolderText, icon}) => {
+const QuestInput:React.FC<InputProps>  = ({type , paleceHolderText, icon , labelText}) => {
     return (
-        <div className = {styles.inputGroup}>
-            {
-                icon &&
-                <img src={icon} alt="inputIcon" />
-            }
-            <input className = {styles.questInput} type = {type} placeholder = {paleceHolderText}/>
-        </div>
+           <>
+                {
+                    labelText &&
+                    <label className={styles.inputLabel}>{labelText}</label>
+                }
+                <div className = {styles.inputGroup}>
+                    
+                    {
+                        icon &&
+                        <img src={icon} alt="inputIcon" />
+                    }
+                    <input className = {styles.questInput} type = {type} placeholder = {paleceHolderText}/>
+                </div>
+           </>
     )
 }
 
