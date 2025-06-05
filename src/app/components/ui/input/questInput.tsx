@@ -4,10 +4,13 @@ type InputProps = {
     type : "password" | "email" | "text",
     paleceHolderText : string,
     icon?: string,
-    labelText? : string
+    labelText? : string,
+    userAuth? : boolean,
 }
 
-const QuestInput:React.FC<InputProps>  = ({type , paleceHolderText, icon , labelText}) => {
+
+const QuestInput:React.FC<InputProps>  = ({type , paleceHolderText, icon , labelText, userAuth = false}) => {
+    console.log(userAuth)
     return (
            <>
                 {
@@ -20,10 +23,16 @@ const QuestInput:React.FC<InputProps>  = ({type , paleceHolderText, icon , label
                         icon &&
                         <img src={icon} alt="inputIcon" />
                     }
-                    <input className = {styles.questInput} type = {type} placeholder = {paleceHolderText}/>
+                    <div className={styles.inputWrapper}>
+                        <input className = {styles.questInput} type = {type} placeholder = {paleceHolderText}/>
+                        {
+                        userAuth ?  <span className={styles.passDiff}></span> : null 
+                        }
+                    </div>
                 </div>
            </>
     )
+    console.log(userAuth)
 }
 
 export default QuestInput

@@ -72,3 +72,12 @@
     bottom: -5%;
     transform: rotate(180deg);
 }
+
+
+.welcomeBack {
+    padding-bottom: 120px;
+}
+.mainText {
+    text-align: center;
+    padding-bottom: 40px;
+}

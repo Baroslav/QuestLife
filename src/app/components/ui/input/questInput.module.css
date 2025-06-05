@@ -22,7 +22,8 @@
 .questInput {
     background-color: #2C2A2A;
     padding: 17px 0px 17px 30px;
-    width: 90%;
+    box-sizing: border-box;
+    width: 100%;
     color: white;
     font-size: 24px;
     border: none;
@@ -39,8 +40,22 @@
     outline: none;
     background-color: #141313;
 }
+.inputWrapper {
+    width: 100%;
+    position: relative;
+}
+.passDiff {
+    position: absolute;
+    background-color: white;
+    bottom: -25%;
+    width: inherit;
+    height: 1px;
+    left: 0;
+}
+
 
 .inputLabel {
     font-size: 24px;
 }
+
 
