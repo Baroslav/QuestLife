@@ -1,0 +1,82 @@
+.main {
+    background-color: #474343;
+    border-radius: 5px;
+    margin: 25px;
+    padding: 73px 50px;
+    color: white;
+    font-weight: 300;
+}
+.main h1 {
+    font-size: 64px;
+    text-align: center;
+    font-weight: 300;
+}
+.main h2 {
+    font-size: 32px;
+    font-family: serif;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+}
+.aboutHeader {
+    padding-bottom: 80px;
+}
+.subtitles {
+    font-size: 20px;
+    font-family: serif;
+    width: 820px;
+}
+.mainContent p {
+    font-size: 20px;
+}
+
+.about {
+
+}
+.adoutItem {
+    padding-bottom: 40px;
+}
+.itemHeader {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.itemHeader p {
+    margin: 0;
+    font-size: 32px;
+}
+
+.itemHeader p {
+     font-size: 32px;
+}
+
+
+.itemContent {
+    font-family: serif;
+    margin: 0;
+    font-size: 20px;
+    width: 780px;
+}
+
+.about img {
+    width: 45px;
+    height: 45px;
+}
+
+.callToAction {
+    position: relative;
+    text-align: center;
+}
+.callToAction img {
+    width: 423px;
+    height: 423px;
+}
+.callToAction p {
+    width: 780px;
+    text-align: left;
+    font-family: serif;
+    font-size: 20px;
+}

@@ -1,3 +1,4 @@
+import DefBtn from "../ui/defBtn/defBtn"
 import GoogleAuth from "../ui/googleAuth/googleAuth"
 import QuestInput from "../ui/input/questInput"
 import styles from "./auth.module.css"
@@ -29,7 +30,7 @@ const AuthInputs:React.FC<AuthInputsPorps> = ({userAuth}) => {
                 </div>
             <GoogleAuth/>
 
-            <button>Start your advanture</button>
+            <DefBtn content = {"Start your advanture"}/>
             </div>
     )
 }

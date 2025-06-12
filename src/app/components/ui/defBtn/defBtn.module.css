@@ -1,0 +1,10 @@
+.defBtn {
+    width: 340px;
+    height: 100px;
+    font-family: inter;
+    padding: 39px 52px;
+    background-color: #2C2A2A;
+    color: #D0D0D0;
+    border: none;
+    font-size: 24px;
+}
