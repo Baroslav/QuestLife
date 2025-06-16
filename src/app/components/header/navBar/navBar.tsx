@@ -6,7 +6,7 @@ type HeaderItemsType = {icon: string , linkText: string}
 const headerItems:HeaderItemsType[] = [
     {icon : "castle.png" , linkText : "Home"},
     {icon : "headerQuest.png" , linkText : "Quests"},
-    {icon : "mythical.png" , linkText : "Achivements"},
+    {icon : "mythical.svg" , linkText : "Achivements"},
     {icon : "openbook.png" , linkText : "Statistics"},
 
 ]

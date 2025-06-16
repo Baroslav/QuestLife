@@ -1,0 +1,16 @@
+.bgWrap {
+    margin: 25px;
+    position: relative;
+    background-color: #474343;
+    min-height: 2800px;
+}
+
+.bgWrap img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 25%;
+}

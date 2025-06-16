@@ -7,4 +7,9 @@
     color: #D0D0D0;
     border: none;
     font-size: 24px;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+.defBtn:hover {
+    background-color: #1b1a1a;
 }

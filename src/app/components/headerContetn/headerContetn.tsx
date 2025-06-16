@@ -2,9 +2,10 @@ import DefBtn from "../ui/defBtn/defBtn"
 import AboutItem from "./aboutitem"
 import styles from "./headerContetn.module.css"
 
-const HeaderContet = () => {
+const MainContet = () => {
     return (
         <main className={styles.main}>
+            <img className={styles.mainImg} src="./swordAndShield.svg" alt="" />
             <h1>Welcome, brave Adventurer!</h1>
             <div className={styles.mainContent}>
                <div>
@@ -30,4 +31,4 @@ const HeaderContet = () => {
 }
 
 
-export default HeaderContet
+export default MainContet

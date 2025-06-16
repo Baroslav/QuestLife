@@ -10,6 +10,10 @@ import HeaderGoroup from "./components/header/headerGoroup/headerGoroup";
 import QuestInput from "./components/ui/input/questInput";
 import Auth from "./components/auth/auth";
 import HeaderContet from "./components/headerContetn/headerContetn";
+import MainPage from "./components/pages/main/main";
+import styles from "./page.module.css"
+import QuestsPage from "./components/pages/quests/quest";
+import PageWrapper from "./components/pageWrapper/pageWrapper";
 
 
 
@@ -17,8 +21,11 @@ const marckSctipt = Marck_Script({subsets : ["latin"], weight : "400"})
 
 export default function Home() {
   return (
-    <div className={marckSctipt.className}>
-        <HeaderContet/>
-    </div>
+      <div className={marckSctipt.className}>
+        <HeaderGoroup/>
+        <PageWrapper bgImg="./mythical.svg">
+          <QuestsPage/>
+        </PageWrapper>
+      </div>
   );
 }
