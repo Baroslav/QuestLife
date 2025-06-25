@@ -1,5 +1,7 @@
 .toolsBar {
+    margin-top: 75px;
     display: flex;
     justify-content: space-between;
     gap: 105px;
+    z-index: revert;
 }

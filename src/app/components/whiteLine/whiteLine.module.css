@@ -6,7 +6,7 @@
 
 .whiteLine {
     height: 1px;
-    width: 90%;
+    width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
