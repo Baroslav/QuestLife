@@ -9,7 +9,7 @@ type BgWrappProps = {
 const PageWrapper:React.FC<BgWrappProps> = ({bgImg , children }) => {
     return (
         <div className = {styles.bgWrap}>
-            <img src = {bgImg} alt="" />
+            <img className = {styles.bGImg} src = {bgImg} alt="" />
             {children }
         </div>
     )

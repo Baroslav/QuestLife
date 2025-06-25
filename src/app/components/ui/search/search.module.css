@@ -12,6 +12,7 @@
 .searchGroup {
     display: inline-block;
     position: relative;
+    height: 63px;
 }
 .telescope {
     position: absolute;   
