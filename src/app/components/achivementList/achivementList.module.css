@@ -1,0 +1,33 @@
+.achivementList {
+    margin-top: 70px;
+}
+
+.achivemetItem {
+    z-index: 2;
+    position: relative;
+    padding: 25px 50px;
+    width: 340px;
+    box-sizing: border-box;
+    background-color: #828282;
+}
+.achiveImg {
+    width: 233px;
+    height: 233px;
+    text-align: center;
+    z-index: 2;
+}
+.achivemetItem p {
+    font-size: 32px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.leftTop {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    transform: rotate(90deg);
+    width: 83px;
+    height: 83px;
+    z-index: 1;
+}

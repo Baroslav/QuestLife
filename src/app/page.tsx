@@ -12,8 +12,8 @@ import Auth from "./components/auth/auth";
 import HeaderContet from "./components/headerContetn/headerContetn";
 import MainPage from "./components/pages/main/main";
 import styles from "./page.module.css"
-import QuestsPage from "./components/pages/quests/quest";
 import PageWrapper from "./components/pageWrapper/pageWrapper";
+import AchivementPage from "./components/pages/quests/achivement";
 
 
 
@@ -24,7 +24,7 @@ export default function Home() {
       <div className={marckSctipt.className}>
         <HeaderGoroup/>
         <PageWrapper bgImg="./mythical.svg">
-          <QuestsPage/>
+          <AchivementPage/>
         </PageWrapper>
       </div>
   );
