@@ -13,11 +13,11 @@ const AuthInputs:React.FC<AuthInputsPorps> = ({userAuth}) => {
                 {
                     userAuth ?
                     <>
-                        <QuestInput type="text" paleceHolderText ="user name" icon="./hero.png" labelText="Name Yourself, Traveler (User name)"/>
+                        <QuestInput type="text" paleceHolderText ="user name" icon="./hero.svg" labelText="Name Yourself, Traveler (User name)"/>
                         <QuestInput type="email" paleceHolderText ="email" icon="./email.png" labelText="Beacon of Communicatio (Email)"/>
                     </>
                     :
-                    <QuestInput type="text" paleceHolderText ="user name/email" icon="./hero.png" labelText="Name Yourself, Traveler (User name or email)"/>   
+                    <QuestInput type="text" paleceHolderText ="user name/email" icon="./hero.svg" labelText="Name Yourself, Traveler (User name or email)"/>   
                 }
                 <div className={styles.pass}>
                     <QuestInput userAuth={userAuth} type="password" paleceHolderText ="password" icon="./skeleton-key.png" labelText="Secret Password"/>

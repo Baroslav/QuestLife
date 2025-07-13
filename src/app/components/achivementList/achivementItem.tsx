@@ -1,11 +1,29 @@
+import React from "react"
 import styles from "./achivementList.module.css"
 
-const AchivementItem = () => {
+
+type AchiveItemProp = {
+    achiveName : string,
+    achiveImg : string,
+    achievementDifficult : "Legendary" |  "Mythical" | "Epic" | "Unique" | "Default",
+}
+
+const aciveVariant:Record<AchiveItemProp["achievementDifficult"] , {achiveType : string}> = {
+    Legendary : {achiveType : styles.legendary},
+    Mythical : {achiveType : styles.mythicaly},
+    Epic : {achiveType : styles.epic},
+    Unique : {achiveType : styles.unique},
+    Default : {achiveType : styles.default},
+}
+
+
+const AchivementItem:React.FC<AchiveItemProp>= ({achiveName, achiveImg, achievementDifficult}) => {
+    const {achiveType} = aciveVariant[achievementDifficult]
+
     return (
-        <div className = {styles.achivemetItem}>
-            <img className = {styles.leftTop} src="./achiveSword.svg" alt="" />
-            <img className = {styles.achiveImg} src="./quest.png" alt="" />
-            <p>Achievement name</p>
+        <div className = {`${styles.achivemetItem} ${achiveType}`}>
+            <img className = {styles.achiveImg} src = {achiveImg} alt="" />
+            <p>{achiveName}</p>
         </div>
     )
 }

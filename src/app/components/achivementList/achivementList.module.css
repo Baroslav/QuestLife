@@ -1,14 +1,25 @@
 .achivementList {
-    margin-top: 70px;
+    margin: 70px auto;
+}
+.itemList {
+    display: flex;
+    justify-content: space-around;
+    gap: 95px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .achivemetItem {
-    z-index: 2;
+    cursor: pointer;
     position: relative;
     padding: 25px 50px;
     width: 340px;
     box-sizing: border-box;
     background-color: #828282;
+    transition: all ease-in-out 0.2s
+}
+.achivemetItem:hover {
+    box-shadow: 1px 1px 40px;
 }
 .achiveImg {
     width: 233px;
@@ -17,6 +28,7 @@
     z-index: 2;
 }
 .achivemetItem p {
+    text-align: center;
     font-size: 32px;
     margin: 0px;
     padding-top: 10px;
@@ -29,5 +41,32 @@
     transform: rotate(90deg);
     width: 83px;
     height: 83px;
-    z-index: 1;
+}
+
+
+.legendary { 
+    border: 2px solid #F9E400;
+    box-shadow: 1px 1px 25px #F9E400;
+    color: #F9E400;
+}
+.mythicaly {
+    border: 2px solid #5C03F4;
+    box-shadow: 1px 1px 25px #5C03F4;
+    color: #5C03F4;
+}
+.epic {
+    border:  2px solid #9D2D2D;
+    box-shadow: 1px 1px 25px #9D2D2D;
+    color: #9D2D2D;
+}
+
+.unique {
+    border:  2px solid #23B028;
+    box-shadow: 1px 1px 25px #23B028;
+    color: #23B028;
+}
+.default {
+    border:  2px solid #DEDEDE;
+    box-shadow: 1px 1px 25px #DEDEDE;
+    color: #DEDEDE;
 }
