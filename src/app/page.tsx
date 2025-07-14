@@ -13,7 +13,7 @@ import HeaderContet from "./components/headerContetn/headerContetn";
 import MainPage from "./components/pages/main/main";
 import styles from "./page.module.css"
 import PageWrapper from "./components/pageWrapper/pageWrapper";
-import AchivementPage from "./components/pages/quests/achivement";
+import AchivementPage from "./components/pages/achievements/achivement";
 
 
 
