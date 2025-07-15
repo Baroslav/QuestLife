@@ -1,0 +1,42 @@
+.download {
+    width: 120px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.download p {
+    font-size: 12px;
+    width: 120px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 5px;
+    font-family: serif;
+}
+
+.downloadGrop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 90px;
+}
+.downloadImg {
+    width: 50px;
+    height: 50px;
+    position: absolute;  
+    right: 45%;
+    bottom: 5%;
+    transform: rotate(135deg) translateX(-60%);
+}
+
+.downloadGrop span{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    bottom: 0;
+}
+
+.download:hover > .downloadGrop img{
+    bottom: 1%;
+}

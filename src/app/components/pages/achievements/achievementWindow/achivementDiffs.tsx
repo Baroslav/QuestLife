@@ -8,6 +8,14 @@ const diffs = ['legendary', 'mythicaly', 'epic', 'unique', 'default']
 const AchievemetDiffs = () => {
 
     const [diffsOpen, setDiffsOpen] = useState<boolean>(false)
+    const [selectedDiffs, setSelectedDiffs] = useState<number>()
+
+    const diffsClick = (index : number) => {
+        if(selectedDiffs != index) {
+            setSelectedDiffs(index)
+        }
+        console.log(selectedDiffs)
+    }
 
 
     return (
@@ -21,9 +29,13 @@ const AchievemetDiffs = () => {
             </div>
             <div className = {diffsOpen ? `${styles.diffsItemsOpen}` : `${styles.diffsItems}`}>
                 {
-                    diffs.map((item) => (
-                        <div key={item} className = {styles.diffsItem}>
-                            <p>{item}</p>
+                    diffs.map((item , index) => (
+                        <div 
+                        key={item} 
+                        className = {styles.diffsItem}
+                        onClick = {() => diffsClick(index)}
+                        >
+                            <p className = {`${styles[item]} ${selectedDiffs == index ? styles.activeDiifs : ""}`}>{item}</p>
                         </div>
                     ))
                 }

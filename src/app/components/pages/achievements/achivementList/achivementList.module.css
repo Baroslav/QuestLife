@@ -70,3 +70,9 @@
     box-shadow: 1px 1px 25px #DEDEDE;
     color: #DEDEDE;
 }
+
+.downloadWrapper {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
