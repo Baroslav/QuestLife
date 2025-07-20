@@ -7,7 +7,7 @@ const AchievementDescriptipns = () => {
                 <input type="text" placeholder="Achievemet name"/>
             </div>
             <div className = {styles.achiveInfo}>
-                <input type="text" placeholder="Achivemet description"/>
+                <input type="text" height="100px" placeholder="Achivemet description"/>
             </div>
         </div>
     )

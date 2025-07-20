@@ -4,10 +4,13 @@ import AchievemetDiffs from './achivementDiffs'
 import AchievementDescriptipns from './achivementDescriotions'
 import Download from '@/app/components/ui/download/download'
 import AuthBG from '@/app/components/auth/authBg'
+import AchievementBG from './achieveBG'
 
 const AchievementWindow = () => {
     return (
-        <div className = {styles.acieveWindow}>
+        <div className = {styles.windowWrapper}>
+            <AchievementBG/>
+            <div className = {styles.acieveWindow}>
             <h2>Create your achievemet</h2>
             <div className = {styles.achiveContent}>
                 <div className = {styles.achieveImgContent}>
@@ -27,6 +30,7 @@ const AchievementWindow = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

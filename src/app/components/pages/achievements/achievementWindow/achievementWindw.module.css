@@ -1,13 +1,16 @@
-.acieveWindow {
-
+.windowWrapper {
     position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.acieveWindow {
     width: 1400px;
     height: 1000px;
     background-color: #474343;
-    left: 50%;
-    transform: translateX(-50%);
     padding: 25px;
-    border: 1px solid black;
 }
 .achiveContent {
     padding: 50px;
@@ -16,6 +19,9 @@
     text-align: center;
     font-family: serif;
     color: black;
+    font-size: 52px;
+    margin: 0px;
+    padding: 5px;
 }
 
 .achiveContent {
@@ -55,8 +61,8 @@
     font-size: 24px;
 }
 
-.achiveInfo {
-    height: 320px;
+.achiveInfo input{
+    padding-bottom: 280px;
 }
 
 .achiveDiffs {
@@ -64,6 +70,9 @@
     padding: 14px 24px;
     background-color: #2C2A2A;
 }
+/* .achiveDiffs p {
+    color: black;
+} */
 .diffsHeader {
     width: inherit;
     position: relative;
@@ -95,6 +104,7 @@
     padding: 9px 14px;
     text-transform: capitalize;
     cursor: pointer;
+    margin: 10px;
 }
 
 .legendary {
@@ -104,7 +114,7 @@
 }
 .mythicaly {
     background-color: rgba(92, 3, 244, 0.1);
-    color: rgb(92, 3, 244);
+    color: rgb(54, 0, 148);
     box-shadow: 0px 0px 0px #5C03F4;
 }   
 .epic {
@@ -131,7 +141,9 @@
 }
 
 .btnWrapper {
-    
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
     
 }
 .achieveImgContent {
@@ -143,3 +155,40 @@
     bottom: 0;
 
 }
+
+
+.achiveSwords{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+}
+.achieveMain {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -22%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.leftTop {
+    left: -13%;
+    top: -18%;
+    transform: rotate(-90deg);
+}
+.rightTop {
+    right: -13%;
+    top: -18%;
+}
+.leftBot {
+    left: -13%;
+    bottom: -18%;
+    transform: rotate(180deg);
+}
+.rightBot {
+    right: -13%;
+    bottom: -18%;
+    transform: rotate(90deg);
+}
+

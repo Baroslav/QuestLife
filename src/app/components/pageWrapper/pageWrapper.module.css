@@ -13,5 +13,5 @@
     left: 50%;
     transform: translateX(-50%);
     opacity: 25%;
-    pointer-events: none
+    pointer-events: none;
 }
