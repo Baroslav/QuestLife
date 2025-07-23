@@ -7,14 +7,15 @@ import styles from "./toolsBar.module.css"
 type ToolsBarProps = {
     btnIcon : string
     btnText : string
+    addFunc : any
 }
 
-const ToolsBarList:React.FC<ToolsBarProps> = ({btnIcon , btnText}) => {
+const ToolsBarList:React.FC<ToolsBarProps> = ({btnIcon , btnText , addFunc}) => {
     return (
         <div className = {styles.toolsBar}>
             <AchivementFilter/>
             <Search/>
-            <AddBtn buttonText = {btnText} icon = {btnIcon}/>
+            <AddBtn buttonText = {btnText} icon = {btnIcon} addFunc = {addFunc}/>
         </div>
     )
 }

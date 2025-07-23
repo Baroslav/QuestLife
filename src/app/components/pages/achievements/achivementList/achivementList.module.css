@@ -8,8 +8,12 @@
     flex-wrap: wrap;
     margin: 0 auto;
 }
+.itemWrapper {
+    position: relative;
+}
 
 .achivemetItem {
+    z-index: 2;
     cursor: pointer;
     position: relative;
     padding: 25px 50px;
@@ -17,6 +21,10 @@
     box-sizing: border-box;
     background-color: #828282;
     transition: all ease-in-out 0.2s
+}
+.achieveMain {
+    position: relative;
+    z-index: 2;
 }
 .achivemetItem:hover {
     box-shadow: 1px 1px 40px;
@@ -71,3 +79,32 @@
     color: #DEDEDE;
 }
 
+.itemSword img{
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    z-index: 1;
+}
+
+.leftTop{ 
+    left: -10%;
+    top:-10%;
+    transform: rotate(90deg);
+}
+
+.rightTop {
+    right: -10%;
+    top: -10%;
+    transform: rotate(180deg);
+}
+.leftBot {
+    left: -10%;
+    bottom: -10%;
+    transform: rotate(-90%);
+}
+
+.rightBot {
+    right: -10%;
+    bottom: -10%;
+    transform: rotate(-90deg);
+}

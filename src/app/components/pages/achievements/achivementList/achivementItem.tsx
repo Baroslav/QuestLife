@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./achivementList.module.css"
+import AchieveItemBg from "./achieveItemBG"
 
 
 type AchiveItemProp = {
@@ -21,10 +22,13 @@ const AchivementItem:React.FC<AchiveItemProp>= ({achiveName, achiveImg, achievem
     const {achiveType} = aciveVariant[achievementDifficult]
 
     return (
-        <div className = {`${styles.achivemetItem} ${achiveType}`}>
-            <img className = {styles.achiveImg} src = {achiveImg} alt="" />
-            <p>{achiveName}</p>
-        </div>
+            <div className = {styles.itemWrapper}>
+                <AchieveItemBg/>
+                <div className = {`${styles.achivemetItem} ${achiveType}`}>
+                    <img className = {styles.achiveImg} src = {achiveImg} alt="" />
+                    <p>{achiveName}</p>
+                </div>
+            </div>
     )
 }
 
